@@ -1,7 +1,10 @@
-h1 {
+h1,h3 {
     font-family: 'Press Start 2P', cursive;
     display: flex;
     justify-content: center;
+}
+
+h1 {
     font-size: 28px;
 }
 
