@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Wawancara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,700;1,400&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="./fontawesome-free-5.15.2-web/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="landingpage.js"></script>
+</head>
+
+<body>
+    <div id="vue-app">
+        <h1>TUGAS WAWANCARA</h1>
+        <h1>CA-KRU ARC</h1>
+        <div class="set-of-card">
+            <div class="card-preview" onclick=openModal(1)>
+                <span class="date">5 Maret 2021</span>
+                <div class="photo">
+                    <!-- INPUT FOTO  -->
+                    <img src="./assets/kru 5 maret.png" alt="foto" >
+                </div>
+                <div class="data-wawan">
+                    <div class="list-data">
+                        <div class="header-krucak">
+                            <p>Kru</p>
+                        </div>
+                        <div class="data">
+                            <!-- KRU -->
+                            <p><i class="fas fa-caret-right"></i> James</p>
+                            <p><i class="fas fa-caret-right"></i> Niel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-preview" onclick=openModal(6)>
+                <span class="date">6 Maret 2021</span>
+                <div class="photo">
+                    <!-- INPUT FOTO  -->
+                    <img src="./assets/cakru 6 maret.jpg" alt="foto" >
+                </div>
+                <div class="data-wawan">
+                    <div class="list-data">
+                        <div class="header-krucak">
+                            <p>CaKru</p>
+                        </div>
+                        <div class="data">
+                            <!-- CAKRU -->
+                            <p><i class="fas fa-caret-right"></i> Naufal</p>
+                            <p><i class="fas fa-caret-right"></i> Rheza</p>
+                            <p><i class="fas fa-caret-right"></i> Taufan</p>
+                            <p><i class="fas fa-caret-right"></i> Kinon</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+
+        <!-- MODAL ONLY -->
+        <div class="modal" id="1">
+            <i class="fas fa-times fa-2x" id="close-modal" onclick=closeModal(1)></i>
+            <div class="modal-set-of-card">
+                <div class="modal-card-preview">
+                    <span class="modal-date">5 Maret 2021</span>
+                    <div class="modal-photo">
+                        <!-- INPUT FOTO  -->
+                        <img src="./assets/kru 5 maret.png" alt="foto" >
+                    </div>
+                    <div class="modal-data-wawan">
+                        <div class="modal-list-data">
+                            <div class="modal-header-krucak">
+                                <p>Kru</p>
+                            </div>
+                            <div class="modal-data">
+                                <!-- KRU -->
+                                <div class="name">
+                                    <p onclick=dropdownHandler(3)><i class="fas fa-caret-right" id="2"></i> James</p> 
+                                    <div class="dropdown" id="3">
+                                        <p>Nama Lengkap:</p>
+                                        <p class="details">Nathaniel Jason</p>
+                                        <p>Jurusan:</p>
+                                        <p class="details">Informatika 2019</p>
+                                        <p>ARC Angkatan:</p>
+                                        <p class="details">Kru 2020</p>
+                                        <p>Jabatan di Training:</p>
+                                        <p class="details">Sekben</p>
+                                        <p>Note:</p>
+                                        <p class="details">Nathaniel Jason PHP</p>
+                                    </div>   
+                                </div>
+                                <div class="name">
+                                    <p onclick=dropdownHandler(5)><i class="fas fa-caret-right" id="4"></i> Niel</p>
+                                    <div class="dropdown" id="5">
+                                        <p>Nama Lengkap:</p>
+                                        <p class="details">James Chandra</p>
+                                        <p>Jurusan:</p>
+                                        <p class="details">Informatika 2019</p>
+                                        <p>ARC Angkatan:</p>
+                                        <p class="details">Kru 2020</p>
+                                        <p>Jabatan di Training:</p>
+                                        <p class="details">Sekben</p>
+                                        <p>Note:</p>
+                                        <p class="details">Tetap semangat, jangan suka skip tugas dan day</p>
+                                    </div> 
+                                </div>    
+                                
+                            </div>                   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="6">
+            <i class="fas fa-times fa-2x" id="close-modal" onclick=closeModal(6)></i>
+            <div class="modal-set-of-card">
+                <div class="modal-card-preview">
+                    <span class="modal-date">6 Maret 2021</span>
+                    <div class="modal-photo">
+                        <!-- INPUT FOTO  -->
+                        <img src="./assets/cakru 6 maret.jpg" alt="foto" >
+                    </div>
+                    <div class="modal-data-wawan">
+                        <div class="modal-list-data">
+                            <div class="modal-header-krucak">
+                                <p>Ca-Kru</p>
+                            </div>
+                            <div class="modal-data">
+                                <!-- KRU -->
+                                <div class="name">
+                                    <p onclick=dropdownHandler(8)><i class="fas fa-caret-right" id="7"></i> Naufal</p> 
+                                    <div class="dropdown" id="8">
+                                        <p>Nama Lengkap:</p>
+                                        <p class="details">Naufal Zaidan Nabhan</p>
+                                        <p>Asal:</p>
+                                        <p class="details">Bandung</p>
+                                        <p>Jurusan/Fakultas:</p>
+                                        <p class="details">Telekomunikasi 2019</p>
+                                        <p>NIM:</p>
+                                        <p class="details">18119005</p>
+                                        <p>Alasan Masuk ARC:</p>
+                                        <p class="details">Tertarik mengembangkan diri di networking</p>
+                                        <p>Hobi:</p>
+                                        <p class="details">Ngegame</p>
+                                        <p>Cita-cita:</p>
+                                        <p class="details">Mau jadi communication engineer</p>
+                                    </div>   
+                                </div>
+                                <div class="name">
+                                    <p onclick=dropdownHandler(10)><i class="fas fa-caret-right" id="9"></i> Rheza</p>
+                                    <div class="dropdown" id="10">
+                                        <p>Nama Lengkap:</p>
+                                        <p class="details">Rheza Rizqullah Ecaldy</p>
+                                        <p>Asal:</p>
+                                        <p class="details">Palembang</p>
+                                        <p>Jurusan/Fakultas:</p>
+                                        <p class="details">STEI/ TPB </p>
+                                        <p>NIM:</p>
+                                        <p class="details">16520451</p>
+                                        <p>Alasan Masuk ARC:</p>
+                                        <p class="details">Diajakin temen, kepo sama networking </p>
+                                        <p>Hobi:</p>
+                                        <p class="details">main visual novel</p>
+                                        <p>Cita-cita:</p>
+                                        <p class="details">lulus kuliah</p>
+                                    </div> 
+                                </div>    
+                                <div class="name">
+                                    <p onclick=dropdownHandler(12)><i class="fas fa-caret-right" id="11"></i> Taufan</p>
+                                    <div class="dropdown" id="12">
+                                        <p>Nama Lengkap:</p>
+                                        <p class="details">Taufan Fajarama</p>
+                                        <p>Asal:</p>
+                                        <p class="details">Jakarta</p>
+                                        <p>Jurusan/Fakultas:</p>
+                                        <p class="details">STEI/ TPB </p>
+                                        <p>NIM:</p>
+                                        <p class="details">16520175</p>
+                                        <p>Alasan Masuk ARC:</p>
+                                        <p class="details">Pengen ikut unit yang berbau stei</p>
+                                        <p>Hobi:</p>
+                                        <p class="details">Nonton film, main gitar, denger musik, tidur</p>
+                                        <p>Cita-cita:</p>
+                                        <p class="details">bahagia sama apa yang dikerjain </p>
+                                    </div> 
+                                </div>
+                                <div class="name">
+                                    <p onclick=dropdownHandler(14)><i class="fas fa-caret-right" id="13"></i> Kinon</p>
+                                    <div class="dropdown" id="14">
+                                        <p>Nama Lengkap:</p>
+                                        <p class="details">Kinantan Arya Bagaspati</p>
+                                        <p>Asal:</p>
+                                        <p class="details">Purwokerto</p>
+                                        <p>Jurusan/Fakultas:</p>
+                                        <p class="details">Informatika 2019 </p>
+                                        <p>NIM:</p>
+                                        <p class="details">13519044</p>
+                                        <p>Alasan Masuk ARC:</p>
+                                        <p class="details">Diajakin temen, tahun lalu ga daftar</p>
+                                        <p>Hobi:</p>
+                                        <p class="details">berenang</p>
+                                        <p>Cita-cita:</p>
+                                        <p class="details">selamat dunia akhirat</p>
+                                    </div> 
+                                </div>      
+                                
+                            </div>                   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
